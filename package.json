@@ -1,0 +1,26 @@
+{
+  "name": "opside-down",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "services": "node scripts/build-services.mjs",
+    "predev": "node scripts/build-services.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/build-services.mjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1",
+    "vite": "^6.4.4"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/chakra-petch": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "three": "^0.186.1"
+  }
+}

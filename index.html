@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Opside Down — AI-First Growth Agency</title>
+    <meta name="description" content="Opside Down builds AI agents that answer every lead in seconds, book appointments 24/7 and automate the work that eats your margin. More revenue, less overhead." />
+    <meta name="theme-color" content="#150e13" />
+    <meta property="og:title" content="Opside Down — AI-First Growth Agency" />
+    <meta property="og:description" content="Speed-to-lead chatbots, AI voice agents, automated reporting, AI ad creatives and agentic workflows for growing businesses." />
+    <meta property="og:type" content="website" />
+    <link rel="preload" as="image" href="/bg-gradient.webp" type="image/webp" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Critical CSS: paints the dark background + loader on the very first frame (before JS/CSS load) -->
+    <style>
+      html, body { margin: 0; background: #150e13; color: #f3eeec; }
+      html.is-loading { overflow: hidden; }
+      .loader { position: fixed; inset: 0; z-index: 200; }
+      .loader__panel { position: absolute; left: 0; right: 0; height: 50.5%; background: #150e13; }
+      .loader__panel--a { top: 0; }
+      .loader__panel--b { bottom: 0; }
+      .loader__inner { opacity: 0; }
+      .skip-link { position: fixed; top: -80px; }
+    </style>
+
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__panel loader__panel--a"></div>
+      <div class="loader__panel loader__panel--b"></div>
+      <div class="loader__inner">
+        <div class="loader__top mono">
+          <span>// OPSIDE DOWN</span>
+          <span>AI-FIRST GROWTH AGENCY</span>
+        </div>
+        <div class="loader__brand">
+          <svg class="od-logo od-logo--loader" viewBox="0 0 223.33 73.41" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Opside Down">
+            <g class="lg-top">
+              <path d="M89.11,21.68c0,4.56-0.86,8.47-2.58,11.71c-1.72,3.240-4.21,5.71-7.48,7.42c-3.26,1.7-7.24,2.55-11.92,2.55H21.98c-4.68,0-8.66-0.85-11.92-2.55c-3.26-1.7-5.75-4.17-7.48-7.42C0.86,30.14,0,26.24,0,21.68c0-4.6,0.86-8.52,2.58-11.74C4.3,6.72,6.8,4.25,10.06,2.55C13.32,0.85,17.29,0,21.98,0h45.15c4.68,0,8.66,0.85,11.920,2.55c3.26,1.7,5.75,4.16,7.48,7.39C88.25,13.16,89.11,17.07,89.11,21.68z M80.64,21.68c0-4.16-1.15-7.38-3.45-9.64c-2.3-2.26-5.51-3.39-9.64-3.39h-46c-4.16,0-7.39,1.13-9.67,3.39c-2.28,2.26-3.42,5.47-3.42,9.64c0,4.12,1.14,7.33,3.42,9.61s5.5,3.42,9.67,3.42h46c4.12,0,7.34-1.14,9.64-3.42C79.49,29,80.64,25.8,80.64,21.68z"/>
+              <path d="M94.09,34.6V3.96h5.77c0.92,9.73,1.85,19.46,2.77,29.19C99.79,33.64,96.94,34.12,94.09,34.6z M96.72,22.72v-5.56h9.8c1.04,0,1.88-0.35,2.53-1.04c0.65-0.7,0.97-1.61,0.97-2.75c0-1.17-0.32-2.1-0.96-2.79c-0.64-0.7-1.49-1.04-2.54-1.04h-9.8V3.96h9.65c1.94,0,3.63,0.39,5.07,1.17C112.88,5.91,114,7,114.8,8.41c0.8,1.4,1.2,3.06,1.2,4.95c0,1.88-0.4,3.53-1.2,4.93c-0.8,1.4-1.92,2.49-3.37,3.27c-1.45,0.77-3.13,1.16-5.06,1.16H96.72z"/>
+              <path d="M130.16,34.92c-1.46,0-2.890-0.15-4.29-0.44c-1.4-0.3-2.71-0.73-3.93-1.3c-1.22-0.57-2.33-1.25-3.31-2.05c0.69-2.86,1.37-5.71,2.06-8.57c0.14,0.36,1.98,5.04,4.7,6.05c0.25,0.09,1.19,0.41,2.43,0.61c0.77,0.12,1.54,0.18,2.33,0.18c1.88,0,3.34-0.32,4.38-0.96c1.04-0.64,1.56-1.54,1.56-2.71v-0.02c0-0.89-0.26-1.56-0.78-2.03c-0.52-0.47-1.2-0.82-2.05-1.04c-0.85-0.22-1.77-0.41-2.77-0.57c-1.19-0.18-2.4-0.41-3.62-0.68c-1.22-0.27-2.35-0.71-3.37-1.31c-1.03-0.6-1.85-1.45-2.48-2.56c-0.63-1.11-0.94-2.59-0.94-4.45v-0.02c0-2.99,0.98-5.31,2.95-6.94c1.97-1.64,4.75-2.45,8.34-2.45c1.66,0,3.34,0.28,5.06,0.83c1.71,0.56,3.31,1.35,4.78,2.37c-0.9,2.67-1.8,5.33-2.7,8c-0.13-0.62-0.82-3.68-3.44-5.02c-1.17-0.6-2.28-0.66-3.7-0.66c-1.77,0-3.14,0.29-4.11,0.87c-0.97,0.58-1.45,1.4-1.45,2.45v0.02c0,0.98,0.29,1.73,0.86,2.23c0.58,0.51,1.33,0.88,2.25,1.13c0.93,0.25,1.92,0.47,2.99,0.68c1.18,0.22,2.35,0.5,3.52,0.83c1.17,0.33,2.23,0.8,3.2,1.42c0.97,0.62,1.74,1.47,2.32,2.55c0.58,1.08,0.86,2.49,0.86,4.21v0.04c0,2.95-1.02,5.24-3.06,6.86C136.74,34.1,133.87,34.92,130.16,34.92z"/>
+              <path d="M152.25,3.96V34.6l0,0c0,0-1.69,0.9-3.09,0.96c-0.71,0.03-1.68-0.12-2.89-0.96c0-10.21,0-20.42,0-30.64c0.41,0.27,1.56,0.94,3.16,0.89C150.82,4.81,151.82,4.24,152.25,3.96z"/>
+              <path d="M158.57,34.6V3.96h5.77V34.6H158.57z M161.47,34.6v-5.56h7.35c1.9,0,3.36-0.46,4.4-1.38c1.04-0.92,1.56-2.21,1.56-3.87v-9.02c0-1.67-0.52-2.96-1.56-3.88c-1.04-0.91-2.51-1.37-4.4-1.37h-7.35V3.96h7.23c3.85,0,6.82,0.96,8.92,2.88c2.1,1.92,3.15,4.62,3.15,8.1v8.68c0,2.18-0.45,4.09-1.35,5.740c-0.9,1.65-2.24,2.94-4.04,3.86c-1.79,0.92-4.03,1.38-6.71,1.38H161.47z"/>
+              <path d="M186.46,34.6V3.96h5.77V34.6H186.46z M188.55,9.53V3.96h18.44c-0.3,1.9-0.6,3.8-0.9,5.71C200.24,9.62,194.4,9.57,188.55,9.53z M188.55,22.17v-5.56h16.12c-0.22,0.28-1,1.3-0.99,2.82c0.01,1.47,0.76,2.46,0.99,2.74C199.3,22.17,193.92,22.17,188.55,22.17z M188.55,34.6v-5.56c5.77,0,11.53,0,17.3,0c0.38,1.85,0.76,3.71,1.14,5.56H188.55z"/>
+            </g>
+            <g class="lg-down" transform="matrix(1 0 0 -1 0 114.91)">
+              <path d="M101.69,72.62c-2.68,0-4.92-0.46-6.71-1.38c-1.79-0.92-3.14-2.21-4.04-3.86c-0.9-1.65-1.35-3.56-1.35-5.74v-8.68c0-3.48,1.05-6.18,3.15-8.1c2.1-1.92,5.07-2.88,8.92-2.88h7.23v5.56h-7.35c-1.9,0-3.36,0.46-4.4,1.37c-1.04,0.91-1.56,2.21-1.56,3.88v9.02c0,1.66,0.52,2.95,1.56,3.87c1.04,0.92,2.51,1.38,4.4,1.38h7.35v5.56H101.69z M106.03,72.62V41.98h5.77v30.64H106.03z"/>
+              <path d="M127.82,72.93c-2.25,0-4.21-0.47-5.89-1.4s-2.98-2.25-3.91-3.95c-0.93-1.7-1.39-3.68-1.39-5.94v-8.68c0-2.28,0.46-4.26,1.39-5.95c0.93-1.69,2.23-3.01,3.91-3.94s3.64-1.4,5.89-1.4c2.25,0,4.21,0.47,5.89,1.4c1.68,0.93,2.98,2.25,3.91,3.94c0.93,1.69,1.39,3.68,1.39,5.95v8.68c0,2.26-0.46,4.24-1.39,5.94c-0.93,1.7-2.23,3.02-3.91,3.95C132.04,72.46,130.07,72.93,127.82,72.93z M127.82,67.16c1.57,0,2.83-0.49,3.78-1.47c0.95-0.98,1.42-2.28,1.42-3.9v-8.98c0-1.63-0.47-2.93-1.42-3.91c-0.95-0.98-2.21-1.46-3.78-1.46c-1.57,0-2.83,0.49-3.78,1.46c-0.95,0.98-1.42,2.28-1.42,3.91v8.98c0,1.62,0.47,2.92,1.42,3.9C124.99,66.67,126.25,67.16,127.82,67.16z"/>
+              <path d="M151.85,62.42l5.86-20.44c0.18,0.17,1.05,0.92,2.38,0.9c1.25-0.02,2.06-0.72,2.26-0.9c1.95,6.81,3.91,13.63,5.86,20.44c0.94-6.72,1.88-13.45,2.82-20.17c2.36-0.09,4.71-0.18,7.07-0.27l-7.06,30.64c-0.31-0.24-1.25-0.89-2.63-0.92c-1.49-0.03-2.51,0.69-2.81,0.92c-1.81-7.14-3.62-14.27-5.44-21.41l-5.69,21.41c-0.3-0.23-1.27-0.91-2.69-0.92c-1.45-0.01-2.45,0.69-2.75,0.92c-2.35-10.21-4.71-20.42-7.06-30.64c2.4,0.03,4.79,0.06,7.19,0.09C150.05,48.85,150.95,55.63,151.85,62.42z"/>
+              <path d="M199.74,72.87c0.44-7.98,0.89-15.96,1.33-23.94l0.51,0.55l-11.36,23.11c-0.59-0.32-1.72-0.83-3.21-0.9c-1.87-0.09-3.28,0.57-3.89,0.9c0-10.21,0-20.41,0-30.62c2.38,0.48,4.76,0.96,7.14,1.44c-0.54,7.53-1.08,15.05-1.62,22.58l-0.51-0.55l11.4-23.47c0.59,0.32,1.93,0.95,3.73,0.9c1.57-0.04,2.74-0.58,3.33-0.9c0,9.75,0,19.51,0,29.26C204.3,71.78,202.02,72.33,199.74,72.87z"/>
+            </g>
+            <g class="lg-waves">
+              <path class="lg-wave lg-wave--3" d="M72.61,61.39c0,3.18,0,6.37,0,9.75c-6.19-4.26-6.65-18.22,0.21-23.3c0,2.19-0.04,4.38,0.01,6.57c0.03,1.33,0.36,2.64,1.01,3.92c0.23,0.46,0.21,1.23,1.25,1.17c0.87-0.06,0.86-0.82,0.97-1.32c0.34-1.52,0.57-3.06,0.96-4.57c0.64-2.49,1.56-4.96,3.22-7.31c0.23-0.32,0.25-0.76,1.31-0.96c-0.92,3.96-1.73,9.12-1.68,15.17c0.04,5.03,0.66,9.4,1.41,12.92c-1.29-1.96-2.67-3.97-4.15-6.03C75.61,65.28,74.1,63.28,72.61,61.39z"/>
+              <path class="lg-wave lg-wave--2" d="M64.53,51.98c0,2.58,0,5.17,0,7.75c0,2.33,0,4.65,0,7.2C60.11,64.57,59.23,55.82,64.53,51.98z"/>
+              <path class="lg-wave lg-wave--1" d="M56.79,56.5c0,1.95,0,3.83,0,5.74C53.64,60.97,53.6,58.02,56.79,56.5z"/>
+            </g>
+            <circle class="lg-dot" cx="218.04" cy="67.32" r="5.29"/>
+          </svg>
+        </div>
+        <div class="loader__bottom">
+          <div class="loader__status mono" id="loaderStatus">BOOTING AGENTS</div>
+          <div class="loader__count"><span id="loaderCount">000</span><i>%</i></div>
+        </div>
+        <div class="loader__bar"><span id="loaderBar"></span></div>
+      </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="header is-over-hero" id="header">
+      <nav class="nav glass" aria-label="Primary">
+        <a href="#top" class="brand" data-scroll aria-label="Opside Down home">
+          <svg class="od-logo od-logo--nav" viewBox="0 0 223.33 73.41" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Opside Down">
+            <g class="lg-top">
+              <path d="M89.11,21.68c0,4.56-0.86,8.47-2.58,11.71c-1.72,3.240-4.21,5.71-7.48,7.42c-3.26,1.7-7.24,2.55-11.92,2.55H21.98c-4.68,0-8.66-0.85-11.92-2.55c-3.26-1.7-5.75-4.17-7.48-7.42C0.86,30.14,0,26.24,0,21.68c0-4.6,0.86-8.52,2.58-11.74C4.3,6.72,6.8,4.25,10.06,2.55C13.32,0.85,17.29,0,21.98,0h45.15c4.68,0,8.66,0.85,11.920,2.55c3.26,1.7,5.75,4.16,7.48,7.39C88.25,13.16,89.11,17.07,89.11,21.68z M80.64,21.68c0-4.16-1.15-7.38-3.45-9.64c-2.3-2.26-5.51-3.39-9.64-3.39h-46c-4.16,0-7.39,1.13-9.67,3.39c-2.28,2.26-3.42,5.47-3.42,9.64c0,4.12,1.14,7.33,3.42,9.61s5.5,3.42,9.67,3.42h46c4.12,0,7.34-1.14,9.64-3.42C79.49,29,80.64,25.8,80.64,21.68z"/>
+              <path d="M94.09,34.6V3.96h5.77c0.92,9.73,1.85,19.46,2.77,29.19C99.79,33.64,96.94,34.12,94.09,34.6z M96.72,22.72v-5.56h9.8c1.04,0,1.88-0.35,2.53-1.04c0.65-0.7,0.97-1.61,0.97-2.75c0-1.17-0.32-2.1-0.96-2.79c-0.64-0.7-1.49-1.04-2.54-1.04h-9.8V3.96h9.65c1.94,0,3.63,0.39,5.07,1.17C112.88,5.91,114,7,114.8,8.41c0.8,1.4,1.2,3.06,1.2,4.95c0,1.88-0.4,3.53-1.2,4.93c-0.8,1.4-1.92,2.49-3.37,3.27c-1.45,0.77-3.13,1.16-5.06,1.16H96.72z"/>
+              <path d="M130.16,34.92c-1.46,0-2.890-0.15-4.29-0.44c-1.4-0.3-2.71-0.73-3.93-1.3c-1.22-0.57-2.33-1.25-3.31-2.05c0.69-2.86,1.37-5.71,2.06-8.57c0.14,0.36,1.98,5.04,4.7,6.05c0.25,0.09,1.19,0.41,2.43,0.61c0.77,0.12,1.54,0.18,2.33,0.18c1.88,0,3.34-0.32,4.38-0.96c1.04-0.64,1.56-1.54,1.56-2.71v-0.02c0-0.89-0.26-1.56-0.78-2.03c-0.52-0.47-1.2-0.82-2.05-1.04c-0.85-0.22-1.77-0.41-2.77-0.57c-1.19-0.18-2.4-0.41-3.62-0.68c-1.22-0.27-2.35-0.71-3.37-1.31c-1.03-0.6-1.85-1.45-2.48-2.56c-0.63-1.11-0.94-2.59-0.94-4.45v-0.02c0-2.99,0.98-5.31,2.95-6.94c1.97-1.64,4.75-2.45,8.34-2.45c1.66,0,3.34,0.28,5.06,0.83c1.71,0.56,3.31,1.35,4.78,2.37c-0.9,2.67-1.8,5.33-2.7,8c-0.13-0.62-0.82-3.68-3.44-5.02c-1.17-0.6-2.28-0.66-3.7-0.66c-1.77,0-3.14,0.29-4.11,0.87c-0.97,0.58-1.45,1.4-1.45,2.45v0.02c0,0.98,0.29,1.73,0.86,2.23c0.58,0.51,1.33,0.88,2.25,1.13c0.93,0.25,1.92,0.47,2.99,0.68c1.18,0.22,2.35,0.5,3.52,0.83c1.17,0.33,2.23,0.8,3.2,1.42c0.97,0.62,1.74,1.47,2.32,2.55c0.58,1.08,0.86,2.49,0.86,4.21v0.04c0,2.95-1.02,5.24-3.06,6.86C136.74,34.1,133.87,34.92,130.16,34.92z"/>
+              <path d="M152.25,3.96V34.6l0,0c0,0-1.69,0.9-3.09,0.96c-0.71,0.03-1.68-0.12-2.89-0.96c0-10.21,0-20.42,0-30.64c0.41,0.27,1.56,0.94,3.16,0.89C150.82,4.81,151.82,4.24,152.25,3.96z"/>
+              <path d="M158.57,34.6V3.96h5.77V34.6H158.57z M161.47,34.6v-5.56h7.35c1.9,0,3.36-0.46,4.4-1.38c1.04-0.92,1.56-2.21,1.56-3.87v-9.02c0-1.67-0.52-2.96-1.56-3.88c-1.04-0.91-2.51-1.37-4.4-1.37h-7.35V3.96h7.23c3.85,0,6.82,0.96,8.92,2.88c2.1,1.92,3.15,4.62,3.15,8.1v8.68c0,2.18-0.45,4.09-1.35,5.740c-0.9,1.65-2.24,2.94-4.04,3.86c-1.79,0.92-4.03,1.38-6.71,1.38H161.47z"/>
+              <path d="M186.46,34.6V3.96h5.77V34.6H186.46z M188.55,9.53V3.96h18.44c-0.3,1.9-0.6,3.8-0.9,5.71C200.24,9.62,194.4,9.57,188.55,9.53z M188.55,22.17v-5.56h16.12c-0.22,0.28-1,1.3-0.99,2.82c0.01,1.47,0.76,2.46,0.99,2.74C199.3,22.17,193.92,22.17,188.55,22.17z M188.55,34.6v-5.56c5.77,0,11.53,0,17.3,0c0.38,1.85,0.76,3.71,1.14,5.56H188.55z"/>
+            </g>
+            <g class="lg-down">
+              <path d="M101.69,72.62c-2.68,0-4.92-0.46-6.71-1.38c-1.79-0.92-3.14-2.21-4.04-3.86c-0.9-1.65-1.35-3.56-1.35-5.74v-8.68c0-3.48,1.05-6.18,3.15-8.1c2.1-1.92,5.07-2.88,8.92-2.88h7.23v5.56h-7.35c-1.9,0-3.36,0.46-4.4,1.37c-1.04,0.91-1.56,2.21-1.56,3.88v9.02c0,1.66,0.52,2.95,1.56,3.87c1.04,0.92,2.51,1.38,4.4,1.38h7.35v5.56H101.69z M106.03,72.62V41.98h5.77v30.64H106.03z"/>
+              <path d="M127.82,72.93c-2.25,0-4.21-0.47-5.89-1.4s-2.98-2.25-3.91-3.95c-0.93-1.7-1.39-3.68-1.39-5.94v-8.68c0-2.28,0.46-4.26,1.39-5.95c0.93-1.69,2.23-3.01,3.91-3.94s3.64-1.4,5.89-1.4c2.25,0,4.21,0.47,5.89,1.4c1.68,0.93,2.98,2.25,3.91,3.94c0.93,1.69,1.39,3.68,1.39,5.95v8.68c0,2.26-0.46,4.24-1.39,5.94c-0.93,1.7-2.23,3.02-3.91,3.95C132.04,72.46,130.07,72.93,127.82,72.93z M127.82,67.16c1.57,0,2.83-0.49,3.78-1.47c0.95-0.98,1.42-2.28,1.42-3.9v-8.98c0-1.63-0.47-2.93-1.42-3.91c-0.95-0.98-2.21-1.46-3.78-1.46c-1.57,0-2.83,0.49-3.78,1.46c-0.95,0.98-1.42,2.28-1.42,3.91v8.98c0,1.62,0.47,2.92,1.42,3.9C124.99,66.67,126.25,67.16,127.82,67.16z"/>
+              <path d="M151.85,62.42l5.86-20.44c0.18,0.17,1.05,0.92,2.38,0.9c1.25-0.02,2.06-0.72,2.26-0.9c1.95,6.81,3.91,13.63,5.86,20.44c0.94-6.72,1.88-13.45,2.82-20.17c2.36-0.09,4.71-0.18,7.07-0.27l-7.06,30.64c-0.31-0.24-1.25-0.89-2.63-0.92c-1.49-0.03-2.51,0.69-2.81,0.92c-1.81-7.14-3.62-14.27-5.44-21.41l-5.69,21.41c-0.3-0.23-1.27-0.91-2.69-0.92c-1.45-0.01-2.45,0.69-2.75,0.92c-2.35-10.21-4.71-20.42-7.06-30.64c2.4,0.03,4.79,0.06,7.19,0.09C150.05,48.85,150.95,55.63,151.85,62.42z"/>
+              <path d="M199.74,72.87c0.44-7.98,0.89-15.96,1.33-23.94l0.51,0.55l-11.36,23.11c-0.59-0.32-1.72-0.83-3.21-0.9c-1.87-0.09-3.28,0.57-3.89,0.9c0-10.21,0-20.41,0-30.62c2.38,0.48,4.76,0.96,7.14,1.44c-0.54,7.53-1.08,15.05-1.62,22.58l-0.51-0.55l11.4-23.47c0.59,0.32,1.93,0.95,3.73,0.9c1.57-0.04,2.74-0.58,3.33-0.9c0,9.75,0,19.51,0,29.26C204.3,71.78,202.02,72.33,199.74,72.87z"/>
+            </g>
+            <g class="lg-waves">
+              <path class="lg-wave lg-wave--3" d="M72.61,61.39c0,3.18,0,6.37,0,9.75c-6.19-4.26-6.65-18.22,0.21-23.3c0,2.19-0.04,4.38,0.01,6.57c0.03,1.33,0.36,2.64,1.01,3.92c0.23,0.46,0.21,1.23,1.25,1.17c0.87-0.06,0.86-0.82,0.97-1.32c0.34-1.52,0.57-3.06,0.96-4.57c0.64-2.49,1.56-4.96,3.22-7.31c0.23-0.32,0.25-0.76,1.31-0.96c-0.92,3.96-1.73,9.12-1.68,15.17c0.04,5.03,0.66,9.4,1.41,12.92c-1.29-1.96-2.67-3.97-4.15-6.03C75.61,65.28,74.1,63.28,72.61,61.39z"/>
+              <path class="lg-wave lg-wave--2" d="M64.53,51.98c0,2.58,0,5.17,0,7.75c0,2.33,0,4.65,0,7.2C60.11,64.57,59.23,55.82,64.53,51.98z"/>
+              <path class="lg-wave lg-wave--1" d="M56.79,56.5c0,1.95,0,3.83,0,5.74C53.64,60.97,53.6,58.02,56.79,56.5z"/>
+            </g>
+            <circle class="lg-dot" cx="218.04" cy="67.32" r="5.29"/>
+          </svg>
+        </a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#services" data-scroll data-nav="services">Services</a></li>
+          <li><a href="#industries" data-scroll data-nav="industries">Who we help</a></li>
+          <li><a href="#roi" data-scroll data-nav="roi">ROI</a></li>
+          <li><a href="#process" data-scroll data-nav="process">Process</a></li>
+          <li><a href="#faq" data-scroll data-nav="faq">FAQ</a></li>
+          <li class="nav__pill" id="navPill" aria-hidden="true"></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="#contact" data-scroll class="btn btn--paper btn--sm magnetic"><span>Book a call</span></a>
+          <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mmenu" id="mobileMenu" aria-hidden="true">
+      <div class="mmenu__bg"></div>
+      <ul class="mmenu__list">
+        <li><a href="#about" data-scroll><i class="mono">01</i>About</a></li>
+        <li><a href="#services" data-scroll><i class="mono">02</i>Services</a></li>
+        <li><a href="#industries" data-scroll><i class="mono">03</i>Who we help</a></li>
+        <li><a href="#roi" data-scroll><i class="mono">04</i>ROI calculator</a></li>
+        <li><a href="#process" data-scroll><i class="mono">05</i>Process</a></li>
+        <li><a href="#faq" data-scroll><i class="mono">06</i>FAQ</a></li>
+        <li><a href="#contact" data-scroll><i class="mono">07</i>Contact</a></li>
+      </ul>
+      <p class="mmenu__foot mono">HELLO@OPSIDEDOWN.COM · REPLY &lt; 24H</p>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__canvas" id="heroCanvas" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <div class="hero__content container">
+          <div class="hero__copy">
+            <p class="eyebrow eyebrow--paper hero__eyebrow">// AI-FIRST GROWTH AGENCY</p>
+            <h1 class="hero__title" aria-label="More revenue. Less overhead.">
+              <span class="hero__line" aria-hidden="true">MORE REVENUE.</span>
+              <span class="hero__line text-outline" aria-hidden="true">LESS OVERHEAD.</span>
+            </h1>
+            <p class="hero__sub">Opside Down builds AI agents that answer every lead in seconds, book appointments around the clock, and automate the work that quietly eats your margin.</p>
+            <div class="hero__ctas">
+              <a href="#contact" data-scroll class="btn btn--paper btn--glow magnetic"><span>Book a strategy call</span><b aria-hidden="true">↗</b></a>
+              <a href="#services" data-scroll class="btn btn--ghost magnetic"><span>See what we build</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__hud container" aria-live="polite">
+          <div class="hud">
+            <span class="hud__dot"></span>
+            <span class="mono hud__label">NOW BUILDING</span>
+            <span class="mono hud__value" id="hudValue">SPEED-TO-LEAD BOT</span>
+          </div>
+          <div class="hud hud--keys mono" aria-hidden="true">
+            <span><kbd>←</kbd><kbd>→</kbd> SWITCH FILE</span>
+            <span><kbd>SPACE</kbd> LAMP</span>
+            <span class="hud__drag">CLICK · FLICKER</span>
+          </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>SPEED-TO-LEAD CHATBOTS</span><i>·</i><span>AI VOICE AGENTS</span><i>·</i><span>AUTOMATED REPORTING</span><i>·</i><span>AI AD CREATIVES</span><i>·</i><span>AD STRATEGY AGENTS</span><i>·</i><span>AGENTIC WORKFLOWS</span><i>·</i>
+            <span>SPEED-TO-LEAD CHATBOTS</span><i>·</i><span>AI VOICE AGENTS</span><i>·</i><span>AUTOMATED REPORTING</span><i>·</i><span>AI AD CREATIVES</span><i>·</i><span>AD STRATEGY AGENTS</span><i>·</i><span>AGENTIC WORKFLOWS</span><i>·</i>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section section--dark about" id="about">
+        <div class="deco-rings" aria-hidden="true">
+          <span class="dr-ring dr-ring--1"></span><span class="dr-ring dr-ring--2"></span><span class="dr-ring dr-ring--3"></span><span class="dr-ring dr-ring--4"></span>
+          <span class="dr-orbit dr-orbit--a"><i></i></span><span class="dr-orbit dr-orbit--b"><i></i></span><span class="dr-orbit dr-orbit--c"><i></i></span>
+          <span class="dr-core"></span>
+        </div>
+        <div class="container">
+          <p class="eyebrow" data-reveal>// ABOUT</p>
+          <h2 class="h2" data-split>WE FLIPPED THE<br />AGENCY MODEL.</h2>
+
+          <div class="about__grid">
+            <p class="about__statement" id="aboutStatement">
+              Most agencies sell you <em>more&nbsp;traffic.</em> We fix what happens <em>after the click</em> — so every lead is answered, booked and followed up, while your team stops doing <em>robot&nbsp;work.</em>
+            </p>
+            <div class="about__side" data-reveal>
+              <p>Opside Down is an AI-first agency for brands and practices doing $30k–$150k a month in profit. We design, build and run the agents and automations that turn more of your existing demand into revenue.</p>
+              <p>Chatbots that reply in seconds. Voice agents that book calls. Reports that write themselves. Ad creatives and strategy that improve every week — wired into the tools you already use.</p>
+            </div>
+          </div>
+
+          <div class="stats">
+            <article class="stat" data-card data-glow>
+              <div class="stat__num"><span data-count="60" data-from="300" data-prefix="&lt; ">&lt; 60</span><small>s</small></div>
+              <h3>Speed-to-lead</h3>
+              <p>Every inbound lead gets a real, helpful reply in under a minute — day, night or weekend.</p>
+            </article>
+            <article class="stat" data-card data-glow>
+              <div class="stat__num"><span data-count="24">24</span><small>/7</small></div>
+              <h3>Always booking</h3>
+              <p>Chat and voice agents fill your calendar while you sleep, with humans looped in when it matters.</p>
+            </article>
+            <article class="stat" data-card data-glow>
+              <div class="stat__num"><span data-count="100">100</span><small>%</small></div>
+              <h3>Yours to own</h3>
+              <p>We build, launch and maintain. You own every workflow, prompt and dashboard — no black boxes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES (BENTO) ============ -->
+      <section class="section section--dark services" id="services">
+        <div class="glow-orb glow-orb--a" aria-hidden="true"></div>
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow" data-reveal>// SERVICES</p>
+              <h2 class="h2" data-split>WHAT WE BUILD.</h2>
+            </div>
+            <p class="section__lede" data-reveal>Six systems, one goal: more revenue per lead and less cost per task. Each one plugs into the next.</p>
+          </div>
+
+          <div class="bento">
+            <!-- 01 Chatbot -->
+            <article class="card card--dark card--link bento__chat" data-card data-glow>
+              <a class="card__hit" href="services/speed-to-lead.html" aria-label="Explore speed-to-lead chatbots"></a>
+              <div class="mock mock--chat" data-mock="chat">
+                <div class="chat__head">
+                  <span class="chat__avatar">OD</span>
+                  <div><b>Lumi · Booking Agent</b><small><i class="live"></i>online · replies in 3s</small></div>
+                  <span class="chip chip--red mono">LEAD #2048</span>
+                </div>
+                <div class="chat__ctx mono" aria-hidden="true">
+                  <span>SOURCE <b>INSTAGRAM AD · SPRING PROMO</b></span>
+                  <span>RECEIVED <b>11:42 PM</b></span>
+                  <span>FIRST REPLY <b class="ok">3s</b></span>
+                </div>
+                <div class="chat__body" id="chatBody">
+                  <div class="chat__day mono">TODAY · AFTER HOURS</div>
+                  <div class="msg msg--in">Hi! Do you have any Botox slots this week?</div>
+                  <div class="msg msg--out">Yes! Thursday 4:15pm or Friday 11:00am — which works best?</div>
+                  <div class="msg msg--in">Friday please 🙌</div>
+                  <div class="msg msg--typing"><i></i><i></i><i></i></div>
+                  <div class="msg msg--out">Booked ✓ Friday 11:00am. Confirmation sent by SMS.</div>
+                  <div class="msg msg--sys mono">CALENDAR UPDATED · CRM SYNCED · 0:41 TOTAL</div>
+                </div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(01)</span>
+                <h3 class="h3">SPEED-TO-LEAD CHATBOTS</h3>
+                <p>Website, Instagram, WhatsApp and SMS leads answered in seconds, qualified, and booked straight into your calendar.</p>
+                <ul class="tags"><li>WEB CHAT</li><li>INSTAGRAM DM</li><li>SMS</li><li>CALENDAR</li></ul>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+
+            <!-- 02 Voice -->
+            <article class="card card--dark card--link bento__voice" data-card data-glow>
+              <a class="card__hit" href="services/voice-agents.html" aria-label="Explore AI voice agents"></a>
+              <div class="mock mock--voice" data-mock="voice">
+                <div class="voice__top mono"><span><i class="live"></i>INCOMING CALL</span><span id="voiceTimer">00:00</span></div>
+                <div class="wave" aria-hidden="true">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="voice__result mono">✓ CONSULT BOOKED · TUE 2:30PM</div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(02)</span>
+                <h3 class="h3">AI VOICE AGENTS</h3>
+                <p>Answer every call, handle FAQs and book appointments — no more leads lost to voicemail.</p>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+
+            <!-- 03 Reporting -->
+            <article class="card card--dark card--link bento__report" data-card data-glow>
+              <a class="card__hit" href="services/automated-reporting.html" aria-label="Explore automated reporting"></a>
+              <div class="mock mock--report" data-mock="report">
+                <div class="report__head mono"><span>WEEKLY REVENUE</span><span class="up">+38%</span></div>
+                <div class="report__val">$<span data-count="48200" data-format="k">48.2k</span></div>
+                <div class="bars" aria-hidden="true">
+                  <i style="--h:34%"></i><i style="--h:48%"></i><i style="--h:40%"></i><i style="--h:58%"></i><i style="--h:52%"></i><i style="--h:70%"></i><i style="--h:64%"></i><i style="--h:86%"></i><i style="--h:78%"></i><i style="--h:96%"></i>
+                </div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(03)</span>
+                <h3 class="h3">AUTOMATED REPORTING</h3>
+                <p>Ads, sales and ops data pulled together and delivered to Slack or email every Monday at 8am.</p>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+
+            <!-- 04 Creatives -->
+            <article class="card card--dark card--link bento__creative" data-card data-glow>
+              <a class="card__hit" href="services/ai-ad-creatives.html" aria-label="Explore AI ad creatives"></a>
+              <div class="mock mock--creative" data-mock="creative">
+                <div class="creative" data-variant="A"><span class="mono">VARIANT A</span><b>Glow up<br />this Friday.</b><em class="mono">CTR 2.4%</em></div>
+                <div class="creative" data-variant="B"><span class="mono">VARIANT B</span><b>Your summer<br />body starts now.</b><em class="mono">CTR 3.1%</em></div>
+                <div class="creative" data-variant="C"><span class="mono">VARIANT C</span><b>Book in 30s.<br />Smile for life.</b><em class="mono">CTR 3.8%</em></div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(04)</span>
+                <h3 class="h3">AI AD CREATIVES</h3>
+                <p>On-brand static and video ad variants generated, tested and refreshed at scale.</p>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+
+            <!-- 05 Strategy -->
+            <article class="card card--dark card--link bento__strategy" data-card data-glow>
+              <a class="card__hit" href="services/ad-strategy-agents.html" aria-label="Explore ad strategy agents"></a>
+              <div class="mock mock--strategy" data-mock="strategy">
+                <div class="report__head mono"><span>ROAS · 30D</span><span class="up">4.6×</span></div>
+                <svg class="spark" viewBox="0 0 240 90" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="sparkFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0" stop-color="#d4978e" stop-opacity=".35" />
+                      <stop offset="1" stop-color="#d4978e" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path class="spark__fill" d="M0 78 L24 70 L48 74 L72 58 L96 62 L120 46 L144 50 L168 32 L192 36 L216 18 L240 10 L240 90 L0 90 Z" fill="url(#sparkFill)" />
+                  <path class="spark__line" pathLength="1" d="M0 78 L24 70 L48 74 L72 58 L96 62 L120 46 L144 50 L168 32 L192 36 L216 18 L240 10" fill="none" stroke="#d4978e" stroke-width="2.5" />
+                </svg>
+                <div class="strategy__log mono">▸ BUDGET SHIFTED → AD SET 3 <b>+22%</b></div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(05)</span>
+                <h3 class="h3">AD STRATEGY AGENTS</h3>
+                <p>Agents that watch spend daily, kill losers early and move budget to what's converting.</p>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+
+            <!-- 06 Workflows -->
+            <article class="card card--dark card--link bento__flow" data-card data-glow>
+              <a class="card__hit" href="services/agentic-workflows.html" aria-label="Explore agentic workflows"></a>
+              <div class="mock mock--flow" data-mock="flow">
+                <div class="flow">
+                  <span class="flow__node">LEAD</span>
+                  <span class="flow__node">QUALIFY</span>
+                  <span class="flow__node">BOOK</span>
+                  <span class="flow__node">CRM</span>
+                  <span class="flow__node">FOLLOW-UP</span>
+                  <i class="flow__line"><b class="flow__dot"></b></i>
+                </div>
+                <div class="flow__meta mono"><span><i class="live"></i>WORKFLOW ACTIVE</span><span>RUN #4821 · 142MS</span></div>
+              </div>
+              <div class="card__body">
+                <span class="card__num mono">(06)</span>
+                <h3 class="h3">AGENTIC WORKFLOWS</h3>
+                <p>Follow-ups, reminders, reviews, invoicing and handoffs — your back office on autopilot.</p>
+                <span class="card__more mono">EXPLORE SERVICE <b aria-hidden="true">→</b></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STACK ============ -->
+      <section class="stack" aria-label="Tools we connect to">
+        <div class="container stack__inner">
+          <p class="stack__label mono">// WORKS WITH<br />YOUR STACK</p>
+          <div class="stack__marquee" aria-hidden="true">
+            <div class="stack__track"><span>SHOPIFY</span><span>META ADS</span><span>GOOGLE ADS</span><span>TIKTOK ADS</span><span>GOHIGHLEVEL</span><span>HUBSPOT</span><span>CALENDLY</span><span>ACUITY</span><span>GOOGLE CALENDAR</span><span>WHATSAPP</span><span>INSTAGRAM</span><span>TWILIO</span><span>STRIPE</span><span>KLAVIYO</span><span>SLACK</span><span>GMAIL</span><span>GOOGLE SHEETS</span><span>ZAPIER</span><span>MAKE</span><span>N8N</span><span>SHOPIFY</span><span>META ADS</span><span>GOOGLE ADS</span><span>TIKTOK ADS</span><span>GOHIGHLEVEL</span><span>HUBSPOT</span><span>CALENDLY</span><span>ACUITY</span><span>GOOGLE CALENDAR</span><span>WHATSAPP</span><span>INSTAGRAM</span><span>TWILIO</span><span>STRIPE</span><span>KLAVIYO</span><span>SLACK</span><span>GMAIL</span><span>GOOGLE SHEETS</span><span>ZAPIER</span><span>MAKE</span><span>N8N</span></div>
+          </div>
+        </div>
+        <p class="sr-only">Works with shopify, meta ads, google ads, tiktok ads, gohighlevel, hubspot, calendly, acuity, google calendar, whatsapp, instagram, twilio, stripe, klaviyo, slack, gmail, google sheets, zapier, make, n8n and any tool with an API.</p>
+      </section>
+
+      <!-- ============ INDUSTRIES ============ -->
+      <section class="section section--dark industries" id="industries">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow" data-reveal>// WHO WE HELP</p>
+              <h2 class="h2" data-split>BUILT FOR BUSINESSES<br />READY TO SCALE.</h2>
+            </div>
+            <p class="section__lede" data-reveal>Brands and practices doing $30k–$150k a month in profit, with demand coming in — and too much of it slipping through the cracks.</p>
+          </div>
+
+          <div class="ind-grid">
+            <article class="card card--dark ind ind--wide" data-card data-tilt data-glow>
+              <div class="ind__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div>
+              <span class="ind__tag mono">01 · E-COMMERCE</span>
+              <h3 class="h3">PRODUCT BRANDS</h3>
+              <p>AI creatives on a weekly refresh, ad agents guarding your ROAS, and support bots that recover carts and answer pre-sale questions instantly.</p>
+              <ul class="tags"><li>CREATIVES</li><li>ROAS</li><li>SUPPORT</li></ul>
+            </article>
+            <article class="card card--dark ind" data-card data-tilt data-glow>
+              <div class="ind__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 3.5 5 6.2 5 9a5 5 0 0 1-10 0c0-2.8 2-5.5 5-9Z"/><path d="M10 14a2 2 0 0 0 2 2"/></svg></div>
+              <span class="ind__tag mono">02 · AESTHETICS</span>
+              <h3 class="h3">MEDSPAS</h3>
+              <p>Instant DM replies and 24/7 booking for consults, plus no-show reminders.</p>
+            </article>
+            <article class="card card--dark ind" data-card data-tilt data-glow>
+              <div class="ind__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 10v4M6 7v10M18 7v10M21 10v4M6 12h12"/></svg></div>
+              <span class="ind__tag mono">03 · FITNESS</span>
+              <h3 class="h3">GYMS & COACHES</h3>
+              <p>Trial sign-ups followed up in seconds; members nudged before they churn.</p>
+            </article>
+            <article class="card card--dark ind" data-card data-tilt data-glow>
+              <div class="ind__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg></div>
+              <span class="ind__tag mono">04 · HEALTHCARE</span>
+              <h3 class="h3">DENTISTS & DOCTORS</h3>
+              <p>Voice receptionists that never miss a call, plus recalls and review requests.</p>
+            </article>
+            <article class="card card--dark ind" data-card data-tilt data-glow>
+              <div class="ind__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></div>
+              <span class="ind__tag mono">05 · WELLBEING</span>
+              <h3 class="h3">MENTAL HEALTH COACHES</h3>
+              <p>Warm, on-brand intake and scheduling — with sensitive moments always routed to a human.</p>
+            </article>
+            <article class="card card--red ind ind--fit" data-card>
+              <span class="ind__tag mono">// FIT CHECK</span>
+              <h3 class="h3">LEADS COMING IN BUT NOT CONVERTING?</h3>
+              <p>If your team answers leads hours late, misses calls, or spends evenings in spreadsheets — that's recoverable revenue.</p>
+              <a href="#contact" data-scroll class="btn btn--paper btn--glow magnetic"><span>Get a free AI audit</span><b aria-hidden="true">→</b></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ROI CALCULATOR ============ -->
+      <section class="section section--dark roi" id="roi">
+        <div class="glow-orb glow-orb--a" aria-hidden="true"></div>
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow" data-reveal>// THE LEAK CALCULATOR</p>
+              <h2 class="h2" data-split>WHAT'S SLIPPING<br /><span class="text-outline">THROUGH THE CRACKS.</span></h2>
+            </div>
+            <p class="section__lede" data-reveal>Move the sliders to match your business. See what faster replies and less admin could be worth each month.</p>
+          </div>
+
+          <div class="roi__grid" id="roiCalc">
+            <form class="card card--dark roi__inputs" data-card onsubmit="return false" aria-label="Your numbers">
+              <label class="roi__field">
+                <span class="roi__row"><span class="mono">NEW LEADS PER MONTH</span><output class="roi__val" data-out="leads">300</output></span>
+                <input type="range" id="roi-leads" name="leads" min="20" max="3000" step="10" value="300" />
+              </label>
+              <label class="roi__field">
+                <span class="roi__row"><span class="mono">LEADS ANSWERED LATE OR MISSED</span><output class="roi__val" data-out="late">40%</output></span>
+                <input type="range" id="roi-late" name="late" min="0" max="90" step="5" value="40" />
+              </label>
+              <label class="roi__field">
+                <span class="roi__row"><span class="mono">CLOSE RATE WHEN ANSWERED FAST</span><output class="roi__val" data-out="close">20%</output></span>
+                <input type="range" id="roi-close" name="close" min="2" max="60" step="1" value="20" />
+              </label>
+              <label class="roi__field">
+                <span class="roi__row"><span class="mono">AVERAGE CUSTOMER VALUE</span><output class="roi__val" data-out="value">$600</output></span>
+                <input type="range" id="roi-value" name="value" min="50" max="10000" step="50" value="600" />
+              </label>
+              <label class="roi__field">
+                <span class="roi__row"><span class="mono">TEAM HOURS ON FOLLOW-UPS &amp; REPORTS / WEEK</span><output class="roi__val" data-out="hours">15h</output></span>
+                <input type="range" id="roi-hours" name="hours" min="0" max="80" step="1" value="15" />
+              </label>
+            </form>
+
+            <div class="card card--dark roi__result" data-card aria-live="polite">
+              <p class="mono roi__kicker">REVENUE YOU COULD RECOVER</p>
+              <p class="roi__big"><span id="roiMonth">$0</span><small>/mo</small></p>
+              <div class="roi__split">
+                <div><span class="mono">PER YEAR</span><b id="roiYear">$0</b></div>
+                <div><span class="mono">EXTRA CUSTOMERS / MO</span><b id="roiCustomers">0</b></div>
+                <div><span class="mono">HOURS BACK / MO</span><b id="roiHours">0</b></div>
+              </div>
+              <a href="#contact" data-scroll class="btn btn--paper btn--glow magnetic roi__cta"><span>Get my exact numbers</span><b aria-hidden="true">→</b></a>
+              <p class="roi__note">Estimate only. Assumes 1 in 3 late or missed leads can be won back by replying in under 60 seconds, at your close rate, and that 70% of follow-up and reporting time can be automated. Your audit replaces these assumptions with your real data.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COMPARISON ============ -->
+      <section class="section section--dark compare" id="compare">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow" data-reveal>// WHY OWNERS SWITCH</p>
+              <h2 class="h2" data-split>HIRE, OUTSOURCE<br />OR <span class="text-outline">FLIP IT.</span></h2>
+            </div>
+            <p class="section__lede" data-reveal>The three ways growing businesses handle leads, follow-ups and reporting, side by side.</p>
+          </div>
+
+          <div class="compare__wrap" data-reveal>
+            <table class="compare__table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="sr-only">What you get</span></th>
+                  <th scope="col">Hiring in-house</th>
+                  <th scope="col">Typical agency</th>
+                  <th scope="col" class="is-us"><span class="compare__logo">Opside Down</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Reply speed to new leads</th><td data-label="Hiring in-house">During shift hours</td><td data-label="Typical agency">Rarely in scope</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Under 60 seconds, 24/7</td></tr>
+                <tr><th scope="row">After-hours calls &amp; DMs</th><td data-label="Hiring in-house">Voicemail until morning</td><td data-label="Typical agency">Not covered</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Answered and booked</td></tr>
+                <tr><th scope="row">Booking into your calendar</th><td data-label="Hiring in-house">Manual</td><td data-label="Typical agency">Not covered</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Automatic, synced to your CRM</td></tr>
+                <tr><th scope="row">Reporting</th><td data-label="Hiring in-house">Spreadsheets on weekends</td><td data-label="Typical agency">Monthly PDF</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Every Monday at 8am, plus alerts</td></tr>
+                <tr><th scope="row">Ad creative testing</th><td data-label="Hiring in-house">Depends on one designer</td><td data-label="Typical agency">A few variants a month</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Fresh variants every week</td></tr>
+                <tr><th scope="row">Time to impact</th><td data-label="Hiring in-house">Weeks to hire and train</td><td data-label="Typical agency">Weeks of onboarding</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>Live in 2–3 weeks</td></tr>
+                <tr><th scope="row">Who owns the systems</th><td data-label="Hiring in-house">You</td><td data-label="Typical agency">Often the agency</td><td class="is-us" data-label="Opside Down"><i class="ok"></i>You, fully documented</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section class="section section--dark process" id="process">
+        <div class="glow-orb glow-orb--b" aria-hidden="true"></div>
+        <div class="container process__grid">
+          <div class="process__head">
+            <p class="eyebrow" data-reveal>// PROCESS</p>
+            <h2 class="h2" data-split>HOW WE<br />WORK.</h2>
+            <p class="section__lede" data-reveal>From first call to a live system in weeks, not quarters. Most single systems go live in 2–3 weeks; you see progress every step of the way.</p>
+            <div class="process__meter mono" aria-hidden="true">
+              <span id="stepNow">01</span><i></i><span>05</span>
+            </div>
+          </div>
+
+          <ol class="steps" id="steps">
+            <li class="steps__rail" aria-hidden="true"><span id="stepsRail"></span></li>
+            <li class="step" data-step="01">
+              <span class="step__num">01</span>
+              <div class="step__body">
+                <span class="step__time mono">WEEK 1</span>
+                <h3 class="h3">AUDIT</h3>
+                <p>We map your funnel end-to-end and find where leads, hours and dollars are leaking. You get a written plan with the numbers.</p>
+                <ul class="step__list mono"><li>▸ FUNNEL & SPEED-TO-LEAD AUDIT</li><li>▸ ROI-RANKED OPPORTUNITIES</li></ul>
+              </div>
+            </li>
+            <li class="step" data-step="02">
+              <span class="step__num">02</span>
+              <div class="step__body">
+                <span class="step__time mono">WEEK 1–2</span>
+                <h3 class="h3">BLUEPRINT</h3>
+                <p>Conversations, workflows and integrations designed around your brand voice and the tools you already pay for.</p>
+                <ul class="step__list mono"><li>▸ AGENT SCRIPTS & GUARDRAILS</li><li>▸ SYSTEM & DATA MAP</li></ul>
+              </div>
+            </li>
+            <li class="step" data-step="03">
+              <span class="step__num">03</span>
+              <div class="step__body">
+                <span class="step__time mono">WEEKS 2–4</span>
+                <h3 class="h3">BUILD</h3>
+                <p>We build and test every agent against real scenarios from your business — edge cases included, not just happy paths.</p>
+                <ul class="step__list mono"><li>▸ WEEKLY DEMOS</li><li>▸ SANDBOX TESTING</li></ul>
+              </div>
+            </li>
+            <li class="step" data-step="04">
+              <span class="step__num">04</span>
+              <div class="step__body">
+                <span class="step__time mono">WEEKS 3–5</span>
+                <h3 class="h3">LAUNCH</h3>
+                <p>Go-live with monitoring, human handoff rules and team training, so nothing breaks and nobody is surprised.</p>
+                <ul class="step__list mono"><li>▸ STAGED ROLLOUT</li><li>▸ TEAM TRAINING</li></ul>
+              </div>
+            </li>
+            <li class="step" data-step="05">
+              <span class="step__num">05</span>
+              <div class="step__body">
+                <span class="step__time mono">EVERY MONTH</span>
+                <h3 class="h3">OPTIMIZE</h3>
+                <p>Monthly tuning on real conversations and numbers. Your agents get sharper, your costs keep dropping.</p>
+                <ul class="step__list mono"><li>▸ MONTHLY PERFORMANCE REVIEW</li><li>▸ NEW AUTOMATIONS AS YOU GROW</li></ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ FREE AUDIT ============ -->
+      <section class="section section--dark audit" id="audit">
+        <div class="container audit__grid">
+          <div class="audit__copy">
+            <p class="eyebrow" data-reveal>// THE FREE AI AUDIT</p>
+            <h2 class="h2" data-split>SEE THE LEAKS.<br /><span class="text-outline">BEFORE YOU SPEND.</span></h2>
+            <p class="section__lede" data-reveal>A 30-minute call and a written plan with your numbers in it. There's no cost, and you keep the plan whether or not we work together.</p>
+            <div class="audit__cta" data-reveal>
+              <a href="#contact" data-scroll class="btn btn--paper btn--glow magnetic"><span>Book my free audit</span><b aria-hidden="true">→</b></a>
+              <span class="mono audit__meta">30-MIN CALL · WRITTEN PLAN · NO COST</span>
+            </div>
+          </div>
+          <ol class="audit__list">
+            <li class="card card--dark audit__item" data-card>
+              <span class="audit__num">01</span>
+              <div><h3 class="h3">THE CALL</h3><p>30 minutes on your funnel, your tools and where the day goes. Bring your numbers or estimates.</p></div>
+            </li>
+            <li class="card card--dark audit__item" data-card>
+              <span class="audit__num">02</span>
+              <div><h3 class="h3">THE LEAK MAP</h3><p>Where leads, hours and ad spend are leaking today, from first click to booked appointment.</p></div>
+            </li>
+            <li class="card card--dark audit__item" data-card>
+              <span class="audit__num">03</span>
+              <div><h3 class="h3">ROI-RANKED FIXES</h3><p>Every opportunity scored by expected return and effort, so you know what to do first.</p></div>
+            </li>
+            <li class="card card--dark audit__item" data-card>
+              <span class="audit__num">04</span>
+              <div><h3 class="h3">YOUR 90-DAY PLAN</h3><p>A written plan with timelines and a fixed price for what we'd build. Yours to keep.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section section--dark faq" id="faq">
+        <div class="deco-pill" aria-hidden="true"><span class="deco-pill__spin"></span></div>
+        <div class="container faq__grid">
+          <div class="faq__head">
+            <p class="eyebrow" data-reveal>// FAQ</p>
+            <h2 class="h2" data-split>QUESTIONS,<br />ANSWERED.</h2>
+            <p class="section__lede" data-reveal>Still unsure? <a href="#contact" data-scroll class="link">Ask us directly</a> — we reply within 24 hours.</p>
+          </div>
+          <div class="faq__list" id="faqList">
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>What does "speed-to-lead" actually mean?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>It's the time between a lead reaching out and getting a useful reply. Leads contacted within minutes convert far better than leads contacted hours later. Our agents reply in seconds, qualify, and book — on every channel, at any hour.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>Will the AI sound robotic to my customers?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>No. We train every agent on your brand voice, services, pricing and policies, then test it on real scenarios before launch. Anything sensitive or unusual is handed to a human — with full context.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>How long until we're live?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>Most single systems (a chatbot or a voice agent) go live in 2–3 weeks. Multi-agent setups with reporting and ad automation typically take 4–6 weeks. We scope it precisely before we start.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>Does it work with the tools we already use?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>Almost certainly. CRMs, booking software, Shopify, Meta and Google Ads, WhatsApp, SMS, email, Slack, Sheets — if it has an API, we can wire it in.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>How much does it cost?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>It depends on scope, so we quote a fixed price after a free audit call. We only recommend systems we expect to pay for themselves — you'll see the projected ROI before you commit.</p></div></div>
+            </div>
+            <div class="faq__item" data-reveal>
+              <button class="faq__q" aria-expanded="false"><span>Who owns what you build?</span><i aria-hidden="true"></i></button>
+              <div class="faq__a"><div><p>You do. Workflows, prompts, dashboards and documentation are yours. We can keep running and improving them on a monthly plan, or hand everything over to your team.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section section--dark contact" id="contact">
+        <div class="glow-orb glow-orb--c" aria-hidden="true"></div>
+        <div class="container contact__grid">
+          <div class="contact__copy">
+            <p class="eyebrow" data-reveal>// CONTACT</p>
+            <h2 class="h2 h2--xl" data-split>GROWTH STUCK?<br /><span class="text-outline">LET'S FLIP IT.</span></h2>
+            <p class="section__lede" data-reveal>Tell us where leads, time or money are leaking. We'll reply within 24 hours with a free audit slot and honest next steps.</p>
+            <div class="contact__links" data-reveal>
+              <a href="mailto:hello@opsidedown.com" class="btn btn--ghost magnetic"><span>HELLO@OPSIDEDOWN.COM</span></a>
+            </div>
+            <ul class="contact__meta mono" data-reveal>
+              <li>REMOTE · WORLDWIDE</li><li>REPLY &lt; 24 H</li><li>AI · AUTOMATION · GROWTH</li>
+            </ul>
+          </div>
+
+          <form class="form card card--dark" id="contactForm" novalidate data-reveal>
+            <div class="form__row">
+              <label class="field"><span class="mono">NAME</span><input name="name" type="text" autocomplete="name" placeholder="Jane Doe" required /></label>
+              <label class="field"><span class="mono">EMAIL</span><input name="email" type="email" autocomplete="email" placeholder="jane@company.com" required /></label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span class="mono">BUSINESS TYPE</span>
+                <select name="type" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>E-commerce brand</option><option>Medspa / aesthetics</option><option>Gym / fitness coach</option><option>Dental / medical</option><option>Mental health / coaching</option><option>Other service business</option>
+                </select>
+              </label>
+              <label class="field"><span class="mono">MONTHLY PROFIT</span>
+                <select name="profit" required>
+                  <option value="" disabled selected>Select range</option>
+                  <option>Under $30k</option><option>$30k – $75k</option><option>$75k – $150k</option><option>$150k+</option>
+                </select>
+              </label>
+            </div>
+            <label class="field"><span class="mono">WHAT'S LEAKING?</span><textarea name="message" rows="4" placeholder="e.g. we miss calls after 6pm and reply to DMs the next day…" required></textarea></label>
+            <input type="text" name="company_site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form__foot">
+              <button type="submit" class="btn btn--red btn--glow magnetic"><span>Send message</span><b aria-hidden="true">→</b></button>
+              <p class="form__note mono" id="formNote" role="status"></p>
+            </div>
+            <div class="form__done" aria-hidden="true">
+              <div class="form__check">✓</div>
+              <h3 class="h3">MESSAGE RECEIVED.</h3>
+              <p>Thanks — we'll be in touch within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <p class="footer__tag">More revenue. Less overhead.<br />AI that pays for itself.</p>
+          <nav class="footer__nav mono" aria-label="Footer">
+            <a href="#services" data-scroll>SERVICES</a><a href="#industries" data-scroll>WHO WE HELP</a><a href="#roi" data-scroll>ROI</a><a href="#process" data-scroll>PROCESS</a><a href="#faq" data-scroll>FAQ</a><a href="#contact" data-scroll>CONTACT</a>
+          </nav>
+        </div>
+        <div class="wordmark" id="wordmark">
+          <svg class="od-logo od-logo--footer" viewBox="0 0 223.33 73.41" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Opside Down">
+            <g class="lg-top">
+              <path d="M89.11,21.68c0,4.56-0.86,8.47-2.58,11.71c-1.72,3.240-4.21,5.71-7.48,7.42c-3.26,1.7-7.24,2.55-11.92,2.55H21.98c-4.68,0-8.66-0.85-11.92-2.55c-3.26-1.7-5.75-4.17-7.48-7.42C0.86,30.14,0,26.24,0,21.68c0-4.6,0.86-8.52,2.58-11.74C4.3,6.72,6.8,4.25,10.06,2.55C13.32,0.85,17.29,0,21.98,0h45.15c4.68,0,8.66,0.85,11.920,2.55c3.26,1.7,5.75,4.16,7.48,7.39C88.25,13.16,89.11,17.07,89.11,21.68z M80.64,21.68c0-4.16-1.15-7.38-3.45-9.64c-2.3-2.26-5.51-3.39-9.64-3.39h-46c-4.16,0-7.39,1.13-9.67,3.39c-2.28,2.26-3.42,5.47-3.42,9.64c0,4.12,1.14,7.33,3.42,9.61s5.5,3.42,9.67,3.42h46c4.12,0,7.34-1.14,9.64-3.42C79.49,29,80.64,25.8,80.64,21.68z"/>
+              <path d="M94.09,34.6V3.96h5.77c0.92,9.73,1.85,19.46,2.77,29.19C99.79,33.64,96.94,34.12,94.09,34.6z M96.72,22.72v-5.56h9.8c1.04,0,1.88-0.35,2.53-1.04c0.65-0.7,0.97-1.61,0.97-2.75c0-1.17-0.32-2.1-0.96-2.79c-0.64-0.7-1.49-1.04-2.54-1.04h-9.8V3.96h9.65c1.94,0,3.63,0.39,5.07,1.17C112.88,5.91,114,7,114.8,8.41c0.8,1.4,1.2,3.06,1.2,4.95c0,1.88-0.4,3.53-1.2,4.93c-0.8,1.4-1.92,2.49-3.37,3.27c-1.45,0.77-3.13,1.16-5.06,1.16H96.72z"/>
+              <path d="M130.16,34.92c-1.46,0-2.890-0.15-4.29-0.44c-1.4-0.3-2.71-0.73-3.93-1.3c-1.22-0.57-2.33-1.25-3.31-2.05c0.69-2.86,1.37-5.71,2.06-8.57c0.14,0.36,1.98,5.04,4.7,6.05c0.25,0.09,1.19,0.41,2.43,0.61c0.77,0.12,1.54,0.18,2.33,0.18c1.88,0,3.34-0.32,4.38-0.96c1.04-0.64,1.56-1.54,1.56-2.71v-0.02c0-0.89-0.26-1.56-0.78-2.03c-0.52-0.47-1.2-0.82-2.05-1.04c-0.85-0.22-1.77-0.41-2.77-0.57c-1.19-0.18-2.4-0.41-3.62-0.68c-1.22-0.27-2.35-0.71-3.37-1.31c-1.03-0.6-1.85-1.45-2.48-2.56c-0.63-1.11-0.94-2.59-0.94-4.45v-0.02c0-2.99,0.98-5.31,2.95-6.94c1.97-1.64,4.75-2.45,8.34-2.45c1.66,0,3.34,0.28,5.06,0.83c1.71,0.56,3.31,1.35,4.78,2.37c-0.9,2.67-1.8,5.33-2.7,8c-0.13-0.62-0.82-3.68-3.44-5.02c-1.17-0.6-2.28-0.66-3.7-0.66c-1.77,0-3.14,0.29-4.11,0.87c-0.97,0.58-1.45,1.4-1.45,2.45v0.02c0,0.98,0.29,1.73,0.86,2.23c0.58,0.51,1.33,0.88,2.25,1.13c0.93,0.25,1.92,0.47,2.99,0.68c1.18,0.22,2.35,0.5,3.52,0.83c1.17,0.33,2.23,0.8,3.2,1.42c0.97,0.62,1.74,1.47,2.32,2.55c0.58,1.08,0.86,2.49,0.86,4.21v0.04c0,2.95-1.02,5.24-3.06,6.86C136.74,34.1,133.87,34.92,130.16,34.92z"/>
+              <path d="M152.25,3.96V34.6l0,0c0,0-1.69,0.9-3.09,0.96c-0.71,0.03-1.68-0.12-2.89-0.96c0-10.21,0-20.42,0-30.64c0.41,0.27,1.56,0.94,3.16,0.89C150.82,4.81,151.82,4.24,152.25,3.96z"/>
+              <path d="M158.57,34.6V3.96h5.77V34.6H158.57z M161.47,34.6v-5.56h7.35c1.9,0,3.36-0.46,4.4-1.38c1.04-0.92,1.56-2.21,1.56-3.87v-9.02c0-1.67-0.52-2.96-1.56-3.88c-1.04-0.91-2.51-1.37-4.4-1.37h-7.35V3.96h7.23c3.85,0,6.82,0.96,8.92,2.88c2.1,1.92,3.15,4.62,3.15,8.1v8.68c0,2.18-0.45,4.09-1.35,5.740c-0.9,1.65-2.24,2.94-4.04,3.86c-1.79,0.92-4.03,1.38-6.71,1.38H161.47z"/>
+              <path d="M186.46,34.6V3.96h5.77V34.6H186.46z M188.55,9.53V3.96h18.44c-0.3,1.9-0.6,3.8-0.9,5.71C200.24,9.62,194.4,9.57,188.55,9.53z M188.55,22.17v-5.56h16.12c-0.22,0.28-1,1.3-0.99,2.82c0.01,1.47,0.76,2.46,0.99,2.74C199.3,22.17,193.92,22.17,188.55,22.17z M188.55,34.6v-5.56c5.77,0,11.53,0,17.3,0c0.38,1.85,0.76,3.71,1.14,5.56H188.55z"/>
+            </g>
+            <g class="lg-down">
+              <path d="M101.69,72.62c-2.68,0-4.92-0.46-6.71-1.38c-1.79-0.92-3.14-2.21-4.04-3.86c-0.9-1.65-1.35-3.56-1.35-5.74v-8.68c0-3.48,1.05-6.18,3.15-8.1c2.1-1.92,5.07-2.88,8.92-2.88h7.23v5.56h-7.35c-1.9,0-3.36,0.46-4.4,1.37c-1.04,0.91-1.56,2.21-1.56,3.88v9.02c0,1.66,0.52,2.95,1.56,3.87c1.04,0.92,2.51,1.38,4.4,1.38h7.35v5.56H101.69z M106.03,72.62V41.98h5.77v30.64H106.03z"/>
+              <path d="M127.82,72.93c-2.25,0-4.21-0.47-5.89-1.4s-2.98-2.25-3.91-3.95c-0.93-1.7-1.39-3.68-1.39-5.94v-8.68c0-2.28,0.46-4.26,1.39-5.95c0.93-1.69,2.23-3.01,3.91-3.94s3.64-1.4,5.89-1.4c2.25,0,4.21,0.47,5.89,1.4c1.68,0.93,2.98,2.25,3.91,3.94c0.93,1.69,1.39,3.68,1.39,5.95v8.68c0,2.26-0.46,4.24-1.39,5.94c-0.93,1.7-2.23,3.02-3.91,3.95C132.04,72.46,130.07,72.93,127.82,72.93z M127.82,67.16c1.57,0,2.83-0.49,3.78-1.47c0.95-0.98,1.42-2.28,1.42-3.9v-8.98c0-1.63-0.47-2.93-1.42-3.91c-0.95-0.98-2.21-1.46-3.78-1.46c-1.57,0-2.83,0.49-3.78,1.46c-0.95,0.98-1.42,2.28-1.42,3.91v8.98c0,1.62,0.47,2.92,1.42,3.9C124.99,66.67,126.25,67.16,127.82,67.16z"/>
+              <path d="M151.85,62.42l5.86-20.44c0.18,0.17,1.05,0.92,2.38,0.9c1.25-0.02,2.06-0.72,2.26-0.9c1.95,6.81,3.91,13.63,5.86,20.44c0.94-6.72,1.88-13.45,2.82-20.17c2.36-0.09,4.71-0.18,7.07-0.27l-7.06,30.64c-0.31-0.24-1.25-0.89-2.63-0.92c-1.49-0.03-2.51,0.69-2.81,0.92c-1.81-7.14-3.62-14.27-5.44-21.41l-5.69,21.41c-0.3-0.23-1.27-0.91-2.69-0.92c-1.45-0.01-2.45,0.69-2.75,0.92c-2.35-10.21-4.71-20.42-7.06-30.64c2.4,0.03,4.79,0.06,7.19,0.09C150.05,48.85,150.95,55.63,151.85,62.42z"/>
+              <path d="M199.74,72.87c0.44-7.98,0.89-15.96,1.33-23.94l0.51,0.55l-11.36,23.11c-0.59-0.32-1.72-0.83-3.21-0.9c-1.87-0.09-3.28,0.57-3.89,0.9c0-10.21,0-20.41,0-30.62c2.38,0.48,4.76,0.96,7.14,1.44c-0.54,7.53-1.08,15.05-1.62,22.58l-0.51-0.55l11.4-23.47c0.59,0.32,1.93,0.95,3.73,0.9c1.57-0.04,2.74-0.58,3.33-0.9c0,9.75,0,19.51,0,29.26C204.3,71.78,202.02,72.33,199.74,72.87z"/>
+            </g>
+            <g class="lg-waves">
+              <path class="lg-wave lg-wave--3" d="M72.61,61.39c0,3.18,0,6.37,0,9.75c-6.19-4.26-6.65-18.22,0.21-23.3c0,2.19-0.04,4.38,0.01,6.57c0.03,1.33,0.36,2.64,1.01,3.92c0.23,0.46,0.21,1.23,1.25,1.17c0.87-0.06,0.86-0.82,0.97-1.32c0.34-1.52,0.57-3.06,0.96-4.57c0.64-2.49,1.56-4.96,3.22-7.31c0.23-0.32,0.25-0.76,1.31-0.96c-0.92,3.96-1.73,9.12-1.68,15.17c0.04,5.03,0.66,9.4,1.41,12.92c-1.29-1.96-2.67-3.97-4.15-6.03C75.61,65.28,74.1,63.28,72.61,61.39z"/>
+              <path class="lg-wave lg-wave--2" d="M64.53,51.98c0,2.58,0,5.17,0,7.75c0,2.33,0,4.65,0,7.2C60.11,64.57,59.23,55.82,64.53,51.98z"/>
+              <path class="lg-wave lg-wave--1" d="M56.79,56.5c0,1.95,0,3.83,0,5.74C53.64,60.97,53.6,58.02,56.79,56.5z"/>
+            </g>
+            <circle class="lg-dot" cx="218.04" cy="67.32" r="5.29"/>
+          </svg>
+        </div>
+        <div class="footer__bottom mono">
+          <span>© <span id="year">2026</span> OPSIDE DOWN</span>
+          <button class="totop" id="toTop">BACK TO TOP ↑</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ AI CONCIERGE ============ -->
+    <div class="concierge" id="concierge">
+      <div class="concierge__teaser" id="conciergeTeaser" aria-hidden="true">Want to see where you're leaking leads?</div>
+      <div class="concierge__panel" id="conciergePanel" role="dialog" aria-label="Lumi, Opside Down AI concierge" aria-hidden="true">
+        <div class="concierge__head">
+          <span class="orb orb--sm" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div class="concierge__who"><b>Lumi</b><small class="mono"><i class="live"></i>AI CONCIERGE · ONLINE</small></div>
+          <button class="concierge__close" id="conciergeClose" aria-label="Close concierge">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="concierge__body" id="conciergeBody" aria-live="polite"></div>
+        <div class="concierge__quick" id="conciergeQuick">
+          <button data-ask="audit">Get a free AI audit</button>
+          <button data-ask="build">What do you build?</button>
+          <button data-ask="who">Who do you work with?</button>
+        </div>
+      </div>
+      <button class="concierge__orb" id="conciergeOrb" aria-label="Open AI concierge" aria-expanded="false" aria-controls="conciergePanel">
+        <span class="orb" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+
+    <noscript><style>.loader{display:none}html.is-loading{overflow:auto}</style></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
