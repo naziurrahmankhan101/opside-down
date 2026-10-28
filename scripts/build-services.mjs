@@ -67,13 +67,13 @@ function page(s) {
         <div class="container svc-hero__grid">
           <div class="svc-hero__copy">
             <nav class="svc-crumbs mono" aria-label="Breadcrumb" data-reveal>
-              <a href="${HOME}#services">SERVICES</a><i aria-hidden="true">/</i><span aria-current="page">${s.num} · ${esc(s.short)}</span>
+              <a href="${HOME}#services">WHAT WE DO</a><i aria-hidden="true">/</i><span aria-current="page">${s.num} · ${esc(s.short)}</span>
             </nav>
-            <p class="eyebrow" data-reveal>// SERVICE ${s.num}</p>
+            <p class="eyebrow" data-reveal>// ${esc(s.kicker)}</p>
             <h1 class="h2 svc-hero__title" data-split>${esc(s.h1[0])}<br /><span class="text-outline">${esc(s.h1[1])}</span></h1>
             <p class="svc-hero__sub" data-reveal>${esc(s.sub)}</p>
             <div class="svc-hero__ctas" data-reveal>
-              <a href="${HOME}#contact" class="btn btn--paper btn--glow magnetic"><span>Book a free audit</span><b aria-hidden="true">↗</b></a>
+              <a href="${HOME}#contact" class="btn btn--paper btn--glow magnetic"><span>Get 3 free ad concepts</span><b aria-hidden="true">↗</b></a>
               <a href="#how" data-scroll class="btn btn--ghost magnetic"><span>How it works</span></a>
             </div>
             <ul class="svc-facts mono" data-reveal>
@@ -92,7 +92,7 @@ function page(s) {
         <div class="container">
           <div class="section__head">
             <div>
-              <p class="eyebrow" data-reveal>// THE PROBLEM</p>
+              <p class="eyebrow" data-reveal>// THE CHALLENGE</p>
               <h2 class="h2" data-split>${esc(s.problem.h2[0])}<br /><span class="text-outline">${esc(s.problem.h2[1])}</span></h2>
             </div>
             <p class="section__lede" data-reveal>${esc(s.problem.lede)}</p>
@@ -114,7 +114,7 @@ function page(s) {
           <div class="process__head">
             <p class="eyebrow" data-reveal>// HOW IT WORKS</p>
             <h2 class="h2" data-split>HOW IT<br />WORKS.</h2>
-            <p class="section__lede" data-reveal>Five steps that run quietly in the background while your team gets on with the day.</p>
+            <p class="section__lede" data-reveal>A clear rhythm, with progress you can see every week and a person accountable at every step.</p>
             <div class="process__meter mono" aria-hidden="true">
               <span id="stepNow">01</span><i></i><span>${String(s.how.length).padStart(2, '0')}</span>
             </div>
@@ -144,7 +144,7 @@ function page(s) {
               <p class="eyebrow" data-reveal>// WHAT'S INCLUDED</p>
               <h2 class="h2" data-split>EVERYTHING<br /><span class="text-outline">DONE FOR YOU.</span></h2>
             </div>
-            <p class="section__lede" data-reveal>We build it, launch it and keep improving it. You own every part of it, fully documented.</p>
+            <p class="section__lede" data-reveal>We do the work and keep improving it. Every ad, file and insight we create is yours to keep.</p>
           </div>
           <ul class="svc-features">
             ${s.included.map((it) => `<li class="svc-feature" data-reveal>
@@ -163,7 +163,7 @@ function page(s) {
               <p class="eyebrow" data-reveal>// WHAT WE MEASURE</p>
               <h2 class="h2" data-split>RESULTS YOU<br />CAN SEE.</h2>
             </div>
-            <p class="section__lede" data-reveal>We agree the numbers that matter before we build, track them from day one and review them with you every month.</p>
+            <p class="section__lede" data-reveal>We agree the numbers that matter before we start, measure them in your own accounts and review them with you every week.</p>
           </div>
           <div class="svc-metrics">
             ${s.metrics.map((m, i) => `<article class="card card--dark svc-metric" data-card data-glow>
@@ -182,9 +182,9 @@ function page(s) {
           <div class="section__head">
             <div>
               <p class="eyebrow" data-reveal>// BEST FOR</p>
-              <h2 class="h2" data-split>BUILT FOR<br />BUSINESSES LIKE YOURS.</h2>
+              <h2 class="h2" data-split>BUILT FOR<br />BRANDS LIKE YOURS.</h2>
             </div>
-            <p class="section__lede" data-reveal>Made for owners doing $30k–$150k a month in profit, with demand coming in and too much of it slipping away.</p>
+            <p class="section__lede" data-reveal>Founder-led e-commerce brands with products people love and ambitions that have outgrown their team.</p>
           </div>
           <div class="svc-fits">
             ${s.fit.map((f) => `<article class="card card--dark svc-fitcard" data-card data-glow data-tilt>
@@ -201,7 +201,7 @@ function page(s) {
           <div class="faq__head">
             <p class="eyebrow" data-reveal>// FAQ</p>
             <h2 class="h2" data-split>QUESTIONS,<br />ANSWERED.</h2>
-            <p class="section__lede" data-reveal>Something else on your mind? <a href="${HOME}#contact" class="link">Ask us directly</a> — we reply within 24 hours.</p>
+            <p class="section__lede" data-reveal>Something else on your mind? <a href="${HOME}#contact" class="link">Ask us directly</a>. We reply within 24 hours.</p>
           </div>
           <div class="faq__list" id="faqList">
             ${s.faqs.map((f) => `<div class="faq__item" data-reveal>
@@ -217,10 +217,10 @@ function page(s) {
         <div class="container svc-cta__inner">
           <p class="eyebrow" data-reveal>// NEXT STEP</p>
           <h2 class="h2 h2--xl" data-split>GROWTH STUCK?<br /><span class="text-outline">LET'S FLIP IT.</span></h2>
-          <p class="section__lede" data-reveal>Book a free AI audit. In 30 minutes we'll show you where ${esc(s.name.toLowerCase())} would pay off first, with a written plan you keep.</p>
+          <p class="section__lede" data-reveal>Book a 20-minute call. We'll come with three ad concepts made for your brand, and they're yours to keep whatever you decide.</p>
           <div class="svc-cta__btns" data-reveal>
-            <a href="${HOME}#contact" class="btn btn--paper btn--glow magnetic"><span>Book my free audit</span><b aria-hidden="true">→</b></a>
-            <a href="${HOME}#roi" class="btn btn--ghost magnetic"><span>Try the ROI calculator</span></a>
+            <a href="${HOME}#contact" class="btn btn--paper btn--glow magnetic"><span>Get my 3 free concepts</span><b aria-hidden="true">→</b></a>
+            <a href="${HOME}#pricing" class="btn btn--ghost magnetic"><span>See pricing</span></a>
           </div>
         </div>
       </section>
@@ -230,10 +230,10 @@ function page(s) {
         <div class="container">
           <div class="section__head">
             <div>
-              <p class="eyebrow" data-reveal>// MORE SERVICES</p>
+              <p class="eyebrow" data-reveal>// THE REST OF THE ENGINE</p>
               <h2 class="h2" data-split>IT ALL<br />CONNECTS.</h2>
             </div>
-            <p class="section__lede" data-reveal>Each system works on its own and gets stronger with the others. Most clients start with one.</p>
+            <p class="section__lede" data-reveal>Each part works on its own and gets stronger with the others. Most brands start with the Sprint.</p>
           </div>
           <div class="svc-more__grid">
             ${others.map((o) => `<a class="card card--dark svc-link" href="${o.slug}.html" data-card data-glow>

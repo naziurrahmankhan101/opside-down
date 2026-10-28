@@ -3,6 +3,14 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/services/ai-ad-creatives", "destination": "/services/growth-partnership", "permanent": true },
+    { "source": "/services/ad-strategy-agents", "destination": "/services/growth-partnership", "permanent": true },
+    { "source": "/services/automated-reporting", "destination": "/services/growth-partnership", "permanent": true },
+    { "source": "/services/speed-to-lead", "destination": "/services/ad-conversations", "permanent": true },
+    { "source": "/services/voice-agents", "destination": "/", "permanent": true },
+    { "source": "/services/agentic-workflows", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

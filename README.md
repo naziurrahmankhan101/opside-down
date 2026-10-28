@@ -50,13 +50,13 @@ Deploy `dist/` to any static host (Vercel, Netlify, Cloudflare Pages). On Vercel
 
 ## Service pages
 
-Six pitch pages live in `services/` (one per service). They are **generated**:
+Three pitch pages live in `services/` (Creative Sprint, Growth Partnership, Ad Conversations). They are **generated**:
 
 - Edit copy in `scripts/services-data.mjs` (hero, problem, how it works, included, KPIs, best-for, FAQs).
 - The nav, footer and Lumi are copied from `index.html` automatically, so change those once on the home page.
 - `npm run services` regenerates the pages (it also runs automatically before `npm run dev` and `npm run build`).
-- Vite builds every page in `services/` as its own entry (see `vite.config.js`). On Vercel, enable "Clean URLs" for `/services/voice-agents` style links.
+- Vite builds every page in `services/` as its own entry (see `vite.config.js`). `vercel.json` turns on clean URLs (`/services/creative-sprint`) and redirects the old service URLs.
 
-## Leak calculator
+## Performance fee calculator
 
-Assumptions are stated on the page and set in `initCalculator()` in `src/main.js`: 1 in 3 late or missed leads recoverable (`RECOVERY`) and 70% of follow-up/reporting time automatable (`AUTOMATABLE`). Change both together with the on-page note.
+`initCalculator()` in `src/main.js`: bill = `FLAT` (€790) + `SHARE` (5%) × ad revenue above the baseline (spend × 3-month ROAS). If pricing changes, update these constants together with the pricing cards, FAQ and service pages.

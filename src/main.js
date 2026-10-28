@@ -766,25 +766,19 @@ function initProcess() {
   });
 }
 
-/* ---------- leak calculator ---------- */
+/* ---------- performance fee calculator: €790 flat + 5% of ad revenue above the baseline ---------- */
 function initCalculator() {
   const root = $('#roiCalc');
   if (!root) return;
   const inputs = $$('input[type="range"]', root);
-  const out = { month: $('#roiMonth'), year: $('#roiYear'), customers: $('#roiCustomers'), hours: $('#roiHours') };
-  const money = (v) => '$' + Math.round(v).toLocaleString('en-US');
-  const label = { leads: (v) => v.toLocaleString('en-US'), late: (v) => v + '%', close: (v) => v + '%', value: (v) => money(v), hours: (v) => v + 'h' };
-  const shown = { month: 0, year: 0, customers: 0, hours: 0 };
-  // assumptions (stated under the result): 1 in 3 late/missed leads recoverable; 70% of admin time automatable
-  const RECOVERY = 1 / 3;
-  const AUTOMATABLE = 0.7;
+  const out = { bill: $('#feeBill'), baseline: $('#feeBaseline'), above: $('#feeAbove'), cut: $('#feeCut'), keep: $('#feeKeep') };
+  const money = (v) => '€' + Math.round(v).toLocaleString('en-GB');
+  const label = { spend: (v) => money(v), base: (v) => v.toFixed(1) + '×', next: (v) => v.toFixed(1) + '×' };
+  const shown = { bill: 0, baseline: 0, above: 0, cut: 0, keep: 0 };
+  const FLAT = 790;
+  const SHARE = 0.05;
 
-  const render = () => {
-    out.month.textContent = money(shown.month);
-    out.year.textContent = money(shown.year);
-    out.customers.textContent = Math.round(shown.customers).toLocaleString('en-US');
-    out.hours.textContent = Math.round(shown.hours).toLocaleString('en-US');
-  };
+  const render = () => Object.keys(out).forEach((k) => { out[k].textContent = money(shown[k]); });
   function calc(animate = true) {
     const v = {};
     inputs.forEach((i) => {
@@ -794,9 +788,10 @@ function initCalculator() {
       const o = root.querySelector(`[data-out="${i.name}"]`);
       if (o) o.textContent = label[i.name](+i.value);
     });
-    const customers = v.leads * (v.late / 100) * RECOVERY * (v.close / 100);
-    const month = customers * v.value;
-    const target = { month, year: month * 12, customers, hours: v.hours * 4.33 * AUTOMATABLE };
+    const baseline = v.spend * v.base;
+    const above = Math.max(0, v.spend * v.next - baseline);
+    const cut = above * SHARE;
+    const target = { bill: FLAT + cut, baseline, above, cut, keep: above - cut };
     if (!animate || reducedMotion) { Object.assign(shown, target); render(); return; }
     gsap.to(shown, { ...target, duration: 0.6, ease: 'power3.out', overwrite: true, onUpdate: render });
   }
@@ -804,7 +799,7 @@ function initCalculator() {
   calc(false);
   // count up the first time the result scrolls into view
   const final = { ...shown };
-  Object.assign(shown, { month: 0, year: 0, customers: 0, hours: 0 });
+  Object.assign(shown, { bill: 0, baseline: 0, above: 0, cut: 0, keep: 0 });
   render();
   ScrollTrigger.create({
     trigger: root,
@@ -863,8 +858,10 @@ function initForm() {
     }
 
     const btn = $('button[type="submit"]', form);
+    const label = $('span', btn);
+    const idle = label.dataset.text || label.textContent;
     btn.disabled = true;
-    $('span', btn).textContent = 'Sending…';
+    label.textContent = 'Sending…';
 
     // Set data-endpoint="https://formspree.io/f/xxxx" (or your own API) on the form to deliver submissions.
     const endpoint = form.dataset.endpoint;
@@ -885,7 +882,7 @@ function initForm() {
       note.textContent = 'SOMETHING WENT WRONG — PLEASE EMAIL US DIRECTLY';
     } finally {
       btn.disabled = false;
-      $('span', btn).textContent = 'Send message';
+      label.textContent = idle;
     }
   });
 }
@@ -941,9 +938,9 @@ function initConcierge() {
   const teaser = $('#conciergeTeaser');
   const quick = $$('#conciergeQuick button');
   const REPLIES = {
-    audit: { me: "I'd like a free AI audit", bot: "Great call. Tell us where leads or hours are leaking and we'll map the fix — taking you to the form ✨", to: '#contact' },
-    build: { me: 'What do you build?', bot: 'Speed-to-lead chatbots, voice agents, automated reports, AI ad creatives, ad strategy agents and workflows. Here’s the lineup →', to: '#services' },
-    who: { me: 'Who do you work with?', bot: 'Brands and practices doing $30k–$150k/mo in profit — e-commerce, medspas, gyms, clinics and coaches. Have a look →', to: '#industries' },
+    concepts: { me: "I'd like 3 free ad concepts", bot: "Lovely. Share your store and we'll bring three concepts made for your brand to a 20-minute call. Yours to keep ✨", to: '#contact' },
+    what: { me: 'What do you actually do?', bot: 'We run a growth engine for e-commerce brands: customer insight, fresh ads every week, testing, campaigns and fast replies to buyers. Here’s how it fits together →', to: '#services' },
+    price: { me: 'How does pricing work?', bot: 'Start with a 30-day Sprint, then a flat monthly fee plus 5% of growth above your own baseline. No growth, no extra. Have a look →', to: '#pricing' },
   };
   let open = false;
   let greeted = false;
@@ -973,7 +970,7 @@ function initConcierge() {
     teaser.classList.remove('is-on');
     if (v && !greeted) {
       greeted = true;
-      botSay("Hi, I'm Lumi 👋 — the kind of AI agent we build. I reply in seconds, day or night. What can I help with?", 1100);
+      botSay("Hi, I'm Lumi 👋 — the same kind of assistant that answers your buyers under your ads, in seconds, day or night. What can I help with?", 1100);
     }
   }
 
